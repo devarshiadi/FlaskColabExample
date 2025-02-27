@@ -128,38 +128,6 @@ Copy the public URL from Serveo and open it in your browser. You should see the 
 
 ---
 
-### **Bonus: Running an Advanced Flask App with HTML**
-
-If you want to build a more interactive UI, you can use Flask with HTML templates, just like we did with the **console-style typing animation** in our previous example. You can add Bootstrap for styling and JavaScript animations to enhance user experience.
-
-```python
-from flask import Flask, render_template_string
-
-app = Flask(__name__)
-
-HTML_PAGE = """
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Flask in Colab</title>
-</head>
-<body>
-    <h1>Welcome to Flask in Google Colab!</h1>
-</body>
-</html>
-"""
-
-@app.route('/')
-def home():
-    return render_template_string(HTML_PAGE)
-
-if __name__ == '__main__':
-    app.run()
-```
-
-Now, you can host and access this app just like before.
-
----
 
 ## **Conclusion**
 
@@ -168,7 +136,7 @@ Running Flask in Google Colab is a useful trick for quick prototyping and sharin
 🚀 I've also shared a ready-to-use **Google Colab notebook** for you to try: [Flask on Colab Notebook](https://github.com/devarshiadi/FlaskColabExample/blob/main/FlaskColabExample.ipynb)
 
 🔗 Connect with me on LinkedIn: [Aditya Devarshi](https://www.linkedin.com/in/aditya-devarshi/)
-🔗 Read more on Medium: [My Medium Profile](https://medium.com/@devarshia5)
+🔗 More on Medium: [My Medium Profile](https://medium.com/@devarshia5)
 
 🙏 Special thanks to Serveo for making easy tunneling possible!
 
