@@ -4,6 +4,8 @@
 
 Flask is a lightweight web framework in Python that allows you to build web applications quickly. While it is typically run on local machines or servers, you can also run Flask applications in Google Colab using a few tricks. This guide will take you through the step-by-step process of running a Flask app inside Google Colab and making it accessible over the internet.
 
+![Demo GIF](demo.gif)
+
 ## **Step 1: Install Flask in Google Colab**
 
 Google Colab does not come with Flask pre-installed. Install it by running the following command:
